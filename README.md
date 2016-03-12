@@ -1,0 +1,1 @@
+Repositório da Organização do Festival Latinoamericano de Instalação de Software Livre que terá uma de suas sedes deste ano no Instituto Federal de Educação, Ciência e Tecnologia do Estado da Bahia (IFBA) - campus Salvador.
