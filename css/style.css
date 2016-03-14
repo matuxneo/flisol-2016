@@ -118,6 +118,11 @@ footer {
 	font-size: 250%;
 }
 
+#div-lateral h5 {
+	font-size: 200%;
+        color: #FE8D27;
+}
+
 .call {
 	width: 40%;
 	height: 15%;

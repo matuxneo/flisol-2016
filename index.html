@@ -34,11 +34,12 @@
 
   <section id="home" name="home">
     <img src="img/logo.jpg" id="logo" class="image" alt="Logomarca do FLISOL" />
-
     <div id="div-lateral">
       <h1>16 de Abril</h1>
       <h4>das 8:00h às 17:00h</h4>
-
+      <div id="countdown">
+      </div>
+ 
       <a href="#" class="buttonDiv">
         <div class="call">
           <p>
@@ -125,6 +126,48 @@
         }, 900, 'swing', function () {
             window.location.hash = target;
         });
+    });
+    
+    $(document).ready(function(){
+        
+    // set the date we're counting down to
+    var target_date = new Date('Apr, 16, 2016').getTime();
+    
+    // variables for time units
+    var days, hours, minutes, seconds;
+    
+    // get tag element
+    var countdown = document.getElementById('countdown');
+    
+    // update the tag with id "countdown" every 1 second
+    function updateCountdown() {
+	// find the amount of "seconds" between now and target
+	var current_date = new Date().getTime();
+	var seconds_left = (target_date - current_date) / 1000;
+    
+	// do some time calculations
+	days = parseInt(seconds_left / 86400) + 1;
+	seconds_left = seconds_left % 86400;
+	
+	hours = parseInt(seconds_left / 3600);
+	seconds_left = seconds_left % 3600;
+	
+	minutes = parseInt(seconds_left / 60);
+	seconds = parseInt(seconds_left % 60);
+	
+	// format countdown string + set tag value
+	if(days>1)
+            countdown.innerHTML = '<h5>Faltam &nbsp;<strong class="features-icon2">' + days + '</strong>&nbsp; dias!</h5>';
+	else if (days == 1)
+            countdown.innerHTML = '<h5>Falta &nbsp;<strong class="features-icon2">' + days + '</strong>&nbsp; dia!</h5>';
+	else if (days == 0)
+            countdown.innerHTML = '<h5>Hoje é o &nbsp;<strong class="features-icon2">dia</strong>&nbsp;!!!</h5>';
+        else
+            countdown.innerHTML = '<h5>O FLISOL foi massa! Valeu Galera!</h5>';
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 86400000);
+       
     });
 });
   </script>
