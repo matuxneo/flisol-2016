@@ -10,9 +10,12 @@
   <meta name="keywords" content="FLISOL, Software Livre" />
   <meta name="author" content="Hugo Deiró">
   <meta name="reply-to" content="opa-i@googlegroups.com">
-
   <link rel="shortcut icon" type="image/png" href="img/flavicon.ico"/>
-	<link href="css/style.css" rel="stylesheet"> 
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/font-bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
 
   <title>FLISOL 2016</title>  
 </head>
@@ -84,21 +87,234 @@
         <img src="img/logo-cdc.png" id="logo-cdc" class="sec-img image" style="margin-top:5% !important; margin-bottom: 5%;" />
       </p>
   </section>
-
+  
   <section id="programacao" name="programacao">
-    <h1 class="title" style="font-size: 230%; margin-top:3%;">Programação</h1>
+    <h1 class="title" style="font-size: 230%; margin-top:3%;"><i class="fa fa-calendar"></i> Programação</h1>
 
-    <img src="img/build.png" id="build" class="image"/> 
+        <div class="panel blank-panel ">
+            <div class="panel-body">        
+                    <div class="tab-content">
+                            <div class="row table-responsive">
+                                <table class="table table-hover table-striped table-program test">
+                                    <thead>
+                                    <tr>
+                                        <th>Horário</th>
+                                        <th class="text-center"><div>Sala 1</div></th>
+                                        <th class="text-center"><div>Sala 2</div></th>
+                                        <th class="text-center"><div>Sala 3</div></th>
+                                        <th class="text-center"><div>Auditório</div></th>
+                                        <th class="text-center"><div>Lab 1</div></th>
+                                        <th class="text-center"><div>Lab 2</div></th>
+                                        <th class="text-center"><div>Lab 3</div></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>08:00</td>
+                                        <td class ="text-center" colspan="7"><div class="text-warning"> CREDENCIAMENTO</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>08:30</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-info dim btn-xs" type="button" data-toggle="modal" data-target=""><i class="fa fa-comments-o"></i></button> Abertura</div></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P1"><i class="fa fa-microphone"></i></button> P1</div></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-warning dim btn-xs" type="button" data-toggle="modal" data-target=""><i class="fa fa-desktop"></i></button> IF</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:00</td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-success dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-flask"></i></button> MC1</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-success dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-flask"></i></button> MC2</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-warning dim btn-xs" type="button" data-toggle="modal" data-target=""><i class="fa fa-desktop"></i></button> IF</div></td>
+                                    </tr>
+                                     <tr>
+                                        <td>11:00</td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P1"><i class="fa fa-microphone"></i></button> P1</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-success dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-flask"></i></button> MC1</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-success dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-flask"></i></button> MC2</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-warning dim btn-xs" type="button" data-toggle="modal" data-target=""><i class="fa fa-desktop"></i></button> IF</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00</td>
+                                        <td class ="text-center" colspan="7"><div class ="text-warning">ALMOÇO</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13:00</td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P1"><i class="fa fa-microphone"></i></button> P1</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-success dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-flask"></i></button> MC3</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-success dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-flask"></i></button> MC4</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14:00</td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P1"><i class="fa fa-microphone"></i></button> P1</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-primary dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> PX</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-success dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-flask"></i></button> MC3</div></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-success dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-flask"></i></button> MC4</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:00</td>
+                                        <td class ="text-center" colspan="7"><div class="text-warning">INTERVALO</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:30</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-center"><div class="text-center"><button class="btn btn2 btn-danger dim btn-xs" type="button" data-toggle="modal" data-target="#P2"><i class="fa fa-microphone"></i></button> Mesa Redonda</div></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17:00</td>
+                                        <td class ="text-center" colspan="7"><div class="text-warning">ENCERRAMENTO</div></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
   </section>
 
-  <iframe id="mapa" name="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1339623717763!2d-38.502987884543074!3d-12.963278563155926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160520d53d33eb%3A0x158b0f8dcb2bc835!2sIFBA+-+Campus+de+Salvador!5e0!3m2!1spt-BR!2sbr!4v1457743582111" height="650" frameborder="0" style="border:0; width: 100%; padding-top:4%;"></iframe>
+ <section id="mapa" name="mapa">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1339623717763!2d-38.502987884543074!3d-12.963278563155926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160520d53d33eb%3A0x158b0f8dcb2bc835!2sIFBA+-+Campus+de+Salvador!5e0!3m2!1spt-BR!2sbr!4v1457743582111" height="650" frameborder="0" style="border:0; width: 100%; padding-top:4%;"></iframe>
+  </section>
   
+  <!--Install Fest-->
+  <div class="modal inmodal" id="IF" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content animated pulse">
+            <div class="modal-header">
+            
+               <div class="col-lg-12 no-padding">
+                        <div class="widget-head-color-box navy-bg p-xs text-center">
+                           <div class="row m-t-none m-b-none  vertical-align">
+                               <div class="col-md-4">
+                               <img src="https://scontent-gru2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1455995_426045040828401_854825955_n.jpg?oh=3105f814589ead15f075c50e0262f698&oe=5792462C" class="img-circle circle-border m-t-none m-b-none profile-img" alt="profile">
+                               </div>
+                               <div class="col-md-8">
+                                    <h2 class="font-bold no-margins">
+                                        Ícaro Jerry
+                                    </h2>
+                                    <small>IFBA</small>
+                                    <ul class="list-inline social-icon3 m-t-sm">
+                                        <li><a href="https://www.facebook.com/icarojerry" target="_blank"><i class="fa fa-facebook m-t-l"></i></a>
+                                        </li>
+                                        <li><a href="http://www.linkedin.com/in/icarojerry" target="_blank"><i class="fa fa-linkedin m-t-l"></i></a>
+                                        </li>
+                                        <li><a href="http://www.github.com/icarojerry" target="_blank"><i class="fa fa-github m-t-l"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <h4 class="modal-title return-padding"><i class="fa fa-microphone"></i> Install Fest</h4><br>
+                <i class="fa fa-map-marker"></i> Lab 1.</small><br>
+                <small class="font-bold return-padding"><i class="fa fa-clock-o"></i> 09:00-11:30</small>
+            </div>
+            <div class="modal-body">
+                <p>
+                <strong>Resumo:</strong>
+                </p>
+                <p><strong>Minicurrículo:</strong>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!--Abertura-->
+  <div class="modal inmodal in" id="ABERTURA" tabindex="-1" role="dialog" aria-hidden="false" style="display: none; padding-right: 15px;">
+  <div class="modal-backdrop  in" style="height: 774px;"></div>
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+            
+               <div class="col-lg-12 no-padding">
+                        <div class="widget-head-color-box navy-bg p-xs text-center">
+                           <div class="row m-t-none m-b-none  vertical-align">
+                               <div class="col-md-6">
+                                    <div class="row">
+                                        <img src="https://scontent-gru2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1455995_426045040828401_854825955_n.jpg?oh=3105f814589ead15f075c50e0262f698&oe=5792462C" class="img-circle img-small circle-border m-t-none m-b-none  profile-img-small" alt="profile">
+                                    </div>
+                                    <h3 class="font-bold no-margins">
+                                        Ícaro Jerry
+                                    </h3>
+                                    <small>Instituto Federal da Bahia</small>
+                                    <ul class="list-inline social-icon3 m-t-sm">
+                                        <li><a href="http://lattes.cnpq.br/" target="_blank"><i class="fa fa-file-text"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                               <div class="col-md-6">
+                                    <div class="row">
+                                        <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xat1/v/t1.0-9/1239420_966003660144328_8159932250338197086_n.jpg?oh=c46db36aa48a65ac0326397d30bb9f2f&oe=575261F8&__gda__=1465456396_5e8c62325d642fd40c56082c9e3d788b" class="img-circle img-small circle-border m-t-none m-b-none  profile-img-small" alt="profile">
+                                    </div>
+                                    <h3 class="font-bold no-margins">
+                                        Hugo Deiró
+                                    </h3>
+                                    <small>Instituto Federal da Bahia</small>
+                                    <ul class="list-inline social-icon3 m-t-sm">
+                                        <li><a href="http://lattes.cnpq.br/" target="_blank"><i class="fa fa-file-tex"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <h4 class="modal-title return-padding"><i class="fa fa-comments"></i> Abertura do FLISoL 2016 Salvador</h4>
+                <small class="font-bold return-padding"><i class="fa fa-clock-o"></i> 08:00-08:30</small>
+            </div>
+            <div class="modal-body">
+                <p>Conhecer a história é importante para compreender os fatos que nos levaram à situação atual e melhor planejar onde queremos estar no futuro. Neste painel, teremos contato com duas personalidades que contribuíram decisivamente para o desenvolvimento da computação na Bahia, tanto na academia, como na indústria.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
   <footer>
       Nenhum direito Reservado - <a href="http://opai.github.io" target="_blank">Open Projects at IFBA (OPAI)</a>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function() { 
         $('#logo').hide();
