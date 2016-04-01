@@ -304,3 +304,47 @@ footer a:hover {
 		width: 80%;
 	}
 }
+.modal-header {
+    min-height: 16.4286px;
+    padding: 0px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.modal-content {
+    overflow: hidden;
+}
+.modal-body {
+    font-size: 13px;
+}
+
+.gray-section {
+  background: #f4f4f4;
+  margin-top: 60px;
+}
+
+.profile-img {
+  width: 80%;
+}
+.profile-img-small {
+  width: 50%;
+}
+.m-t-sm {
+  margin-top: 10px;
+}
+.m-t-l {
+  font-size: 20px !important;
+  width: 40%;
+}
+.btn-xs {
+      font-size: 20px !important;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+      background-color: #FCF1E8  !important;
+      
+}
+
+.table-hover>tbody>tr:hover{
+    background-color:#D9E5FF !important;
+}
+
+
