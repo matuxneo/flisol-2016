@@ -31,7 +31,7 @@ body {
 	overflow-x: hidden; 
 }
 
-a {text-decoration: none;} 
+a {text-decoration: none !important;} 
 
 section {
 	padding-top:2%;
@@ -47,6 +47,7 @@ header nav, footer {
 	height: 40px;
 	padding-top:10px; 
 	text-align: center;
+        z-index:9999999;
 } 
 
 header nav a {
@@ -199,6 +200,7 @@ footer a:hover {
 .title {
 	color: #015ED7;	
 	font-size: 180%;
+        text-align:center;
 }
 
 #sobre a {
@@ -347,4 +349,12 @@ footer a:hover {
     background-color:#D9E5FF !important;
 }
 
+.apoio-logo {
+    max-width: 40%;
+    display: inline !important;
+}
 
+.apoio-logo:last-child {
+    margin-left: 10%;
+    max-width: 30% !important;
+}
